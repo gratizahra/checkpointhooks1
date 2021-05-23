@@ -1,0 +1,9 @@
+
+.App {
+  text-align: center;
+  background-color: rgb(9, 66, 47);
+  }
+  .movie-list-conatiner{
+    display:flex;
+    flex-wrap: wrap;
+}

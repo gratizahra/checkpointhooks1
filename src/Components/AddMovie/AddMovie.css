@@ -1,0 +1,57 @@
+.Add-btn {
+    border-radius: 25px;
+    background-color: #fe4141;
+    border: transparent;
+    color: white;
+    font-size: 300px;
+    padding: 8px 20px;
+    margin: 30px 0 30px 20px;
+    cursor: pointer;
+    width: 270px;
+    height: 380px;
+    box-shadow: -11px 11px 1px rgba(168, 164, 164, 0.3);
+  }
+  .Add-btn:focus {
+    outline: 0;
+  }
+  .add-modal {
+    position: relative;
+    top: 10%;
+    left: 35%;
+    padding: 20px;
+    width: 500px;
+    text-align: center;
+    border: 1px solid #1e1b26;
+    border-radius: 5px;
+    background-color: white;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  form input {
+    width: 98%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    color: grey;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+  form label {
+    margin-top: 20px;
+  }
+  form input:focus {
+    outline: 0;
+  }
+  .Modal-btn {
+    border-radius: 5px;
+    background-color: #fe4141;
+    border: transparent;
+    color: white;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 10px;
+  }

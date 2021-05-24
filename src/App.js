@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 
 import './App.css';
-import {moviesData} from './Components/MovieData'
+import {moviesData} from './MovieData'
 import MoviesList from './Components/MovieList/MoviesList'
 import AddMovie from './Components/AddMovie/AddMovie'
 import Search from './Components/Search/Search'

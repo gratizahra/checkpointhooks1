@@ -1,10 +1,11 @@
 import React,{useState} from 'react';
-
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import './App.css';
-import {moviesData} from './MovieData'
+import {moviesData} from'./Components/MovieData/MovieData'
 import MoviesList from './Components/MovieList/MoviesList'
 import AddMovie from './Components/AddMovie/AddMovie'
 import Search from './Components/Search/Search'
+import DetailPage from './Components/DetailPage/DetailPage';
 
 
 function App() {
@@ -25,7 +26,11 @@ function App() {
     return setMoviesList([...moviesList, newMovie]);
   }
   return (
+
     <div className="App">
+      <Router>
+        <Switch>
+          <Route path='/'>
       <div className="titl">
         <h1>Movies Store</h1>
       </div>
@@ -33,7 +38,12 @@ function App() {
         ratingSearch={ratingSearch}/>
       <MoviesList moviesData={moviesList} nameSearch={nameSearch}  ratingSearch={ratingSearch}/>
       <AddMovie addMovie={addMovie} setNewMovieName={setNewMovieName} setSrc={setSrc} setRating={setRating}/>
+       </Route>
+      <Route path='/detail/:movieId' component={DetailPage}/>
+      </Switch>
+      </Router>
     </div>
+
   );
 }
 
